@@ -40,7 +40,7 @@ jobs:
        # prerelease: true
     - name: Create prerelease
       run: |
-        gh release create "${{ github.sha }}" cryptr_linux_en.tar --title "Prerelease ${{ github.sha }}" --prerelease
+        gh release create "${{ github.sha }}" cryptr_linux_en.tar --title "Prerelease ${{ github.sha.substr(0,5) }}" --prerelease
       env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TAG: ${{ github.ref_name }}
