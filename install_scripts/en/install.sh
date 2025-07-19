@@ -10,7 +10,6 @@ if ! grep -Fxq "$ALIAS_LINE" ~/.bashrc; then
 fi
 
 mkdir -p ~/.pyapps/cryptr
+cp -r ./* ~/.pyapps/cryptr/
 cd ~/.pyapps/cryptr
-curl lorem.ipsum/domain/cryptr_linux.tar
-tar -xf cryptr_linux.tar
-rm cryptr_linux.tar
+rm ~/.pyapps/cryptr/install.sh
