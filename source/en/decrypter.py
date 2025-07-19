@@ -1,6 +1,6 @@
 from cryptography.fernet import Fernet
 
-def Decrypter():
+def decrypter():
 
     # Key Input
     key = input("🔑 Input key: ").encode()

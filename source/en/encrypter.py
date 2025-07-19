@@ -1,6 +1,6 @@
 from cryptography.fernet import Fernet
 
-def Encrypter():
+def encrypter():
 
     # Selector
     selection = input("🔐 Do you want to use your own key? (y/n): ")

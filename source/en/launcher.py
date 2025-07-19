@@ -1,5 +1,5 @@
-from decrypter import Decrypter
-from encrypter import Encrypter
+from decrypter import decrypter
+from encrypter import encrypter
 
 launcherSelection = input("Do you want to use the encrypter or the decrypter? (e/d): ").lower()
 
