@@ -14,6 +14,5 @@ def Decrypter():
     try:
         message = cipher.decrypt(ciphertext).decode()
         print("✅ Decrypted message:", message)
-    except Exception as e:
+    except ValueError as e:
         print("❌ Decryption failed.", e)
-
