@@ -11,6 +11,6 @@ fi
 
 mkdir -p ~/.pyapps/cryptr
 cd ~/.pyapps/cryptr
-curl lorem.ipsum/domain/cryptr.tar
-tar -xf cryptr.tar
-rm cryptr.tar
+curl lorem.ipsum/domain/cryptr_linux.tar
+tar -xf cryptr_linux.tar
+rm cryptr_linux.tar
