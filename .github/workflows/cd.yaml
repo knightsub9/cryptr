@@ -43,7 +43,7 @@ jobs:
       run: echo "short_sha=$(git rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
     - name: Create prerelease
       run: |
-        gh release create "${{ github.sha }}" cryptr_linux_en.tar --title "Prerelease ${{ steps.get_sha.outputs.short_sha }}" --prerelease
+        gh release create "${{ steps.get_sha.outputs.short_sha }}" cryptr_linux_en.tar --title "Prerelease ${{ steps.get_sha.outputs.short_sha }}" --prerelease
       env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TAG: ${{ github.ref_name }}
