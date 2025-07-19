@@ -25,23 +25,19 @@ jobs:
     - name: Create Tarball
       run: |
         tar cfv cryptr_linux_en.tar source/en/launcher.py source/en/encrypter.py source/en/decrypter.py LICENSE
-    - name: Create Release
-      id: create_release
-      uses: actions/create-release@v1
+   # - name: Create Release
+    #  id: create_release
+     # uses: actions/create-release@v1
+     # env:
+      #  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+     # with:
+       # tag_name: ${{ github.ref }}
+       # release_name: Release ${{ github.ref }}
+       # draft: false
+       # prerelease: true
+    - name: Create prerelease
+      run: |
+        gh release create "$TAG" cryptr.tar --title "Release $TAG" --prerelease
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
-      with:
-        tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
-        draft: false
-        prerelease: true
-    - name: Upload Release Asset
-      id: upload-release-asset
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
-        asset_path: ./cryptr_linux_en.tar
-        asset_name: cryptr_linux_en.tar
-        asset_content_type: application/tar
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ github.ref_name }}
