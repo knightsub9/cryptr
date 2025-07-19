@@ -4,11 +4,11 @@ from encrypter import encrypter
 launcherSelection = input("Do you want to use the encrypter or the decrypter? (e/d): ").lower()
 
 if launcherSelection == "e":
-    Encrypter()
+    encrypter()
 
 else:
     if launcherSelection == "d":
-        Decrypter()
+        decrypter()
 
     else:
         print("Input invalid")
