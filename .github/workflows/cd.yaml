@@ -1,12 +1,9 @@
-name: release-on-push
+name: prerelease-on-push
 
 on:
   push:
-    branches:
-      - main
-      - dev
-    tags-ignore:
-      - '**'
+    tags:
+      - pre*-v*
 
 permissions:
       contents: write
@@ -47,12 +44,9 @@ jobs:
        # release_name: Release ${{ github.ref }}
        # draft: false
        # prerelease: true
-    - name: Get short commit SHA
-      id: get_sha
-      run: echo "short_sha=$(git rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
     - name: Create prerelease
       run: |
-        gh release create "${{ steps.get_sha.outputs.short_sha }}" cryptr_linux_en.tar cryptr_win_en.zip --title "Prerelease ${{ steps.get_sha.outputs.short_sha }}" --prerelease
+        gh release create "$TAG" cryptr_linux_en.tar cryptr_win_en.zip --title "Prerelease $TAG" --prerelease
       env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TAG: ${{ github.ref_name }}
