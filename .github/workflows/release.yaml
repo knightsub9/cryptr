@@ -28,13 +28,13 @@ jobs:
          # prerelease: false
       - name: Create ZIP
         run: |
-          zip cryptr_win.zip source/en/launcher.py source/en/encrypter.py source/en/decrypter.py LICENSE
+          zip cryptr_win.zip source/launcher.py source/encrypter.py source/decrypter.py LICENSE
       - name: Create Tarball
         run: |
-          tar cfv cryptr_linux.tar source/en/launcher.py source/en/encrypter.py source/en/decrypter.py LICENSE
+          tar cfv cryptr_linux.tar source/launcher.py source/encrypter.py source/decrypter.py LICENSE
       - name: Create release
         run: |
-          gh release create "$TAG" cryptr_linux_en.tar cryptr_win_en.zip --title "Release $TAG"
+          gh release create "$TAG" cryptr_linux.tar cryptr_win.zip --title "Release $TAG"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TAG: ${{ github.ref_name }}
