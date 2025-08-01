@@ -1,6 +1,6 @@
 # Cryptr
 
-Cryptr is a Python-project for encrypting and decrypting files in a terminal with AES. It's supposed to be easy to use, so that anyone can encrypt and/or decrypt messages using Cryptr.
+Cryptr is a Python-project for encrypting and decrypting text in a terminal with AES. It's supposed to be easy to use, so that anyone can encrypt and/or decrypt messages using Cryptr.
 
 ## Requirements
 
