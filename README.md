@@ -38,7 +38,7 @@ Python 3 should be preinstalled, check using `python3 --version` in the terminal
 
 2. Untar the Tarball, but keep all the extracted files in the same folder, but make sure that there aren't any other files/folders in the folder.
 
-3. Run the `install.sh` using `install.sh` or `exec install.sh` whilst in the folder with the extracted files.
+3. Run the `install.sh` using `install.sh`, `./install.sh` or `exec install.sh` whilst in the folder with the extracted files.
 
 4. Close and reopen the terminal after the installation finished.
 
