@@ -13,7 +13,7 @@ To check if you have Cryptography installed, use the command `pip list` if you h
 
 ### Install Python and Cryptography
 
-To install Python and Cryptography, you can either use the terminal, the GUI, or you can download them from [PyPi Cryptography](https://pypi.org/project/cryptography/) or [Python.org](https://python.org/downloads/).
+To install Python and Cryptography, you can either use the terminal, the GUI, or you can download them from [PyPi (Cryptography)](https://pypi.org/project/cryptography/) or [Python.org](https://python.org/downloads/).
 
 #### Windows
 
