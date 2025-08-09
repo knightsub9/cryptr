@@ -1,0 +1,19 @@
+// This is just for making language files quicker to make in the future
+
+{
+    "selection": "",
+    "invalid_input": "",
+
+    "ownkey_ask": "",
+    "key_input_encrypter": "",
+    "newkey_generated": "",
+    "enter_message": "",
+    "show_key": "",
+    "message_encrypted": "",
+    "warning_encrypter": "",
+
+    "input_key_decrypter": "",
+    "encryptedtext_input": "",
+    "decrypted_message": "",
+    "decryption_failed": ""
+}

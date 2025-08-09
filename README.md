@@ -1,6 +1,6 @@
 # Cryptr
 
-Cryptr is a Python-project for encrypting and decrypting files in a terminal with AES. It's supposed to be easy to use, so that anyone can encrypt and/or decrypt messages using Cryptr.
+Cryptr is a Python-project for encrypting and decrypting text in a terminal with AES. It's supposed to be easy to use, so that anyone can encrypt and/or decrypt messages using Cryptr.
 
 ## Requirements
 
@@ -13,7 +13,7 @@ To check if you have Cryptography installed, use the command `pip list` if you h
 
 ### Install Python and Cryptography
 
-To install Python and Cryptography, you can either use the terminal, the GUI, or you can download them from [PyPi Cryptography](https://pypi.org/project/cryptography/) or [Python.org](https://python.org/downloads/).
+To install Python and Cryptography, you can either use the terminal, the GUI, or you can download them from [PyPi (Cryptography)](https://pypi.org/project/cryptography/) or [Python.org](https://python.org/downloads/).
 
 #### Windows
 
@@ -38,7 +38,7 @@ Python 3 should be preinstalled, check using `python3 --version` in the terminal
 
 2. Untar the Tarball, but keep all the extracted files in the same folder, but make sure that there aren't any other files/folders in the folder.
 
-3. Run the `install.sh` using `install.sh` or `exec install.sh` whilst in the folder with the extracted files.
+3. Run the `install.sh` using `install.sh`, `./install.sh` or `exec install.sh` whilst in the folder with the extracted files.
 
 4. Close and reopen the terminal after the installation finished.
 

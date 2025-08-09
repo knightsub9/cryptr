@@ -30,10 +30,10 @@ jobs:
        # pylint $(git ls-files '*.py')
     - name: Create ZIP
       run: |
-        zip cryptr_win_en.zip source/en/launcher.py source/en/encrypter.py source/en/decrypter.py LICENSE
+        zip cryptr_win_pre.zip source/launcher.py source/encrypter.py source/decrypter.py source/lang/ LICENSE
     - name: Create Tarball
       run: |
-        tar cfv cryptr_linux_en.tar source/en/launcher.py source/en/encrypter.py source/en/decrypter.py LICENSE
+        tar cfv cryptr_linux_pre.tar source/launcher.py source/encrypter.py source/decrypter.py source/lang/ LICENSE
     #- name: Create Release
     #  id: create_release
      # uses: actions/create-release@v1
@@ -46,7 +46,7 @@ jobs:
        # prerelease: true
     - name: Create prerelease
       run: |
-        gh release create "$TAG" cryptr_linux_en.tar cryptr_win_en.zip --title "Prerelease $TAG" --prerelease
+        gh release create "$TAG" cryptr_linux_pre.tar cryptr_win_pre.zip --title "Prerelease $TAG" --prerelease
       env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TAG: ${{ github.ref_name }}

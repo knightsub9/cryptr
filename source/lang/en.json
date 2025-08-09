@@ -1,0 +1,17 @@
+{
+    "selection": "Do you want to use the encrypter or the decrypter? (e/d): ",
+    "invalid_input": "Input invalid",
+
+    "ownkey_ask": "🔐 Do you want to use your own key? (y/n): ",
+    "key_input_encrypter": "🔑 Enter your key: ",
+    "newkey_generated": "🆕🔑 A new key was generated and will be used.",
+    "enter_message": "✏️ Enter message: ",
+    "show_key": "🔑 Key: ",
+    "message_encrypted": "🔐 Encrypted: ",
+    "warning_encrypter": "**WARNING**: Only the text between the two ' is encrypted text!",
+
+    "input_key_decrypter": "🔑 Input key: ",
+    "encryptedtext_input": "🔐 Input encrypted text: ",
+    "decrypted_message": "✅ Decrypted message: ",
+    "decryption_failed": "❌ Decryption failed."
+}
