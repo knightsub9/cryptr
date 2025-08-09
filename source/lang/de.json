@@ -1,0 +1,17 @@
+{
+    "selection": "Wollen Sie den Verschlüssler oder den Entschlüssler nutzen? (e/d): ",
+    "invalid_input": "Eingabe ungültig.",
+
+    "ownkey_ask": "🔐 Wollen Sie ihren eigenen Schlüssel benutzen? (y/n): ",
+    "key_input_encrypter": "🔑 Fügen Sie ihren Schlüssel ein: ",
+    "newkey_generated": "🆕🔑 Ein neuer Schlüssel wurde generiert und wird benutzt werden.",
+    "enter_message": "✏️ Fügen Sie die Nachricht ein: ",
+    "show_key": "🔑 Schlüssel: ",
+    "message_encrypted": "🔐 Die Nachricht wurde verschlüsselt: ",
+    "warning_encrypter": "**ACHTUNG**: Nur der Text zwischen den beiden ' ist verschlüsselter Text!",
+
+    "input_key_decrypter": "🔑 Fügen Sie ihren Schlüssel ein: ",
+    "encryptedtext_input": "🔐 Fügen Sie den verschlüsselten Text ein: ",
+    "decrypted_message": "✅ Entschlüsselte Nachricht: ",
+    "decryption_failed": "❌ Entschlüsselung fehlgeschlagen."
+}

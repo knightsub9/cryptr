@@ -28,10 +28,10 @@ jobs:
          # prerelease: false
       - name: Create ZIP
         run: |
-          zip cryptr_win.zip source/launcher.py source/encrypter.py source/decrypter.py LICENSE
+          zip cryptr_win.zip source/launcher.py source/encrypter.py source/decrypter.py source/lang/ LICENSE
       - name: Create Tarball
         run: |
-          tar cfv cryptr_linux.tar source/launcher.py source/encrypter.py source/decrypter.py LICENSE
+          tar cfv cryptr_linux.tar source/launcher.py source/encrypter.py source/decrypter.py source/lang/ LICENSE
       - name: Create release
         run: |
           gh release create "$TAG" cryptr_linux.tar cryptr_win.zip --title "Release $TAG"

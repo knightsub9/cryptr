@@ -30,10 +30,10 @@ jobs:
        # pylint $(git ls-files '*.py')
     - name: Create ZIP
       run: |
-        zip cryptr_win_pre.zip source/launcher.py source/encrypter.py source/decrypter.py LICENSE
+        zip cryptr_win_pre.zip source/launcher.py source/encrypter.py source/decrypter.py source/lang/ LICENSE
     - name: Create Tarball
       run: |
-        tar cfv cryptr_linux_pre.tar source/launcher.py source/encrypter.py source/decrypter.py LICENSE
+        tar cfv cryptr_linux_pre.tar source/launcher.py source/encrypter.py source/decrypter.py source/lang/ LICENSE
     #- name: Create Release
     #  id: create_release
      # uses: actions/create-release@v1
