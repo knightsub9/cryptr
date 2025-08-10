@@ -32,7 +32,7 @@ def translate(key):
 def decrypter():
 
     # Key Input
-    key = input(translate("input_key_encrypter")).encode()
+    key = input(translate("input_key_decrypter")).encode()
 
     # Encrypted Text Input
     ciphertext = input(translate("encryptedtext_input")).encode()
