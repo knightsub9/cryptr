@@ -17,11 +17,11 @@ if os.path.exists(CONFIG_PATH):
         language_code = config.get("language", "en")
 
 # Load language file
-lang_file = os.path.join(os.path.dirname(__file__), "languages", f"{language_code}.json")
+lang_file = os.path.join(os.path.dirname(__file__), "lang", f"{language_code}.json")
 
 if not os.path.exists(lang_file):
     print(f"[WARN] Language '{language_code}' not found.")
-    lang_file = os.path.join(os.path.dirname(__file__), "languages", "en.json")
+    lang_file = os.path.join(os.path.dirname(__file__), "lang", "en.json")
 
 with open(lang_file, "r", encoding="utf-8") as f:
     translations = json.load(f)
