@@ -55,3 +55,27 @@ Python 3 should be preinstalled, check using `python3 --version` in the terminal
 4. If you used the terminal, close and reopen the terminal after the installation finished.
 
 5. You can now start Cryptr using the command `cryptr`.
+
+## Change the language
+
+1. Go to your user's folder.
+
+2. Enable 'show hidden folders'.
+
+3. Go to .pyapps/cryptr/
+
+4. Open config.json
+
+5. Set the language code ('en' by default) to one of the available languages.
+
+### Available languages
+
+The available languages are:
+
+- English
+- French
+- German
+- Italian
+- Portuguese
+- Russian
+- Spanish

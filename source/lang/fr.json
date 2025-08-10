@@ -1,0 +1,17 @@
+{
+    "selection": "Voulez-vous utiliser le chiffreur ou le déchiffreur? (e/d): ",
+    "invalid_input": "Entrée invalide.",
+
+    "ownkey_ask": "🔐 Voulez-vous utiliser votre propre clé? (y/n): ",
+    "key_input_encrypter": "🔑 Entrez votre clé: ",
+    "newkey_generated": "🆕🔑 Une nouvelle clé a été générée et sera utilisée.",
+    "enter_message": "✏️ Entrez le message: ",
+    "show_key": "🔑 Clé: ",
+    "message_encrypted": "🔐 Le message a été chiffré: ",
+    "warning_encrypter": "**ATTENTION**: Seul le texte entre les deux apostrophes ' est du texte chiffré!",
+
+    "input_key_decrypter": "🔑 Entrez votre clé: ",
+    "encryptedtext_input": "🔐 Entrez le texte chiffré: ",
+    "decrypted_message": "✅ Message déchiffré: ",
+    "decryption_failed": "❌ Échec du déchiffrement."
+}

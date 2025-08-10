@@ -1,0 +1,17 @@
+{
+    "selection": "Vuole usare il cifratore o il decifratore? (e/d): ",
+    "invalid_input": "Input non valido.",
+
+    "ownkey_ask": "🔐 Vuole usare la propria chiave? (y/n): ",
+    "key_input_encrypter": "🔑 Inserisca la sua chiave: ",
+    "newkey_generated": "🆕🔑 È stata generata una nuova chiave che verrà utilizzata.",
+    "enter_message": "✏️ Inserisca il messaggio: ",
+    "show_key": "🔑 Chiave: ",
+    "message_encrypted": "🔐 Il messaggio è stato cifrato: ",
+    "warning_encrypter": "**ATTENZIONE**: Solo il testo tra i due apici ' è testo cifrato!",
+
+    "input_key_decrypter": "🔑 Inserisca la sua chiave: ",
+    "encryptedtext_input": "🔐 Inserisca il testo cifrato: ",
+    "decrypted_message": "✅ Messaggio decifrato: ",
+    "decryption_failed": "❌ Decifratura non riuscita."
+}
