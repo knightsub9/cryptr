@@ -60,13 +60,13 @@ Python 3 should be preinstalled, check using `python3 --version` in the terminal
 
 1. Go to your user's folder.
 
-2. Enable 'show hidden folders'.
+2. Enable `show hidden folders`.
 
-3. Go to .pyapps/cryptr/
+3. Go to `.pyapps/cryptr/`.
 
-4. Open config.json
+4. Open `config.json`.
 
-5. Set the language code ('en' by default) to one of the available languages.
+5. Set the language code (`en` by default) to one of the available languages.
 
 ### Available languages
 
